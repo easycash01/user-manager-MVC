@@ -9,11 +9,9 @@ class Pagemodel {
            $link == 'utenti' || 
            $link == 'addUtenti') {
            
-            $response = $link;
-      
+            $response = './pages/' . $link . 'php';
         
-        
-        return $response;
+        include $response;
     }
     }
 }
